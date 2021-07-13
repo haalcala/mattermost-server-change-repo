@@ -826,9 +826,9 @@ type ClusterSettings struct {
 	MaxIdleConns                       *int    `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
 	MaxIdleConnsPerHost                *int    `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
 	IdleConnTimeoutMilliseconds        *int    `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
-	RedisClusterHost                        *string `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
-	RedisClusterPort                        *string `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
-	RedisClusterPass                        *string `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
+	RedisClusterHost                   *string `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
+	RedisClusterPort                   *int    `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
+	RedisClusterPass                   *string `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
 }
 
 func (s *ClusterSettings) SetDefaults() {
@@ -3904,6 +3904,6 @@ type NewTestStruct struct {
 
 func GetNewTestStruct() *NewTestStruct {
 	return &NewTestStruct{
-		version:"1.0.0"
+		Version: "1.0.0",
 	}
 }
