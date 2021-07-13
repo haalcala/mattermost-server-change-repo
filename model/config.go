@@ -826,6 +826,9 @@ type ClusterSettings struct {
 	MaxIdleConns                       *int    `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
 	MaxIdleConnsPerHost                *int    `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
 	IdleConnTimeoutMilliseconds        *int    `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
+	RedisClusterHost                        *string `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
+	RedisClusterPort                        *string `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
+	RedisClusterPass                        *string `access:"environment,write_restrictable,cloud_restrictable"` // telemetry: none
 }
 
 func (s *ClusterSettings) SetDefaults() {
@@ -3893,4 +3896,14 @@ func isTagPresent(tag string, tags []string) bool {
 	}
 
 	return false
+}
+
+type NewTestStruct struct {
+	Version string `json:"version"`
+}
+
+func GetNewTestStruct() *NewTestStruct {
+	return &NewTestStruct{
+		version:"1.0.0"
+	}
 }

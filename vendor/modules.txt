@@ -382,7 +382,7 @@ github.com/mattermost/ldap
 github.com/mattermost/logr
 github.com/mattermost/logr/format
 github.com/mattermost/logr/target
-# github.com/mattermost/mattermost-server/v5 v5.33.5
+# github.com/mattermost/mattermost-server/v5 v5.33.5 => github.com/haalcala/mattermost-server-change-repo/v5 v5.33.0
 ## explicit
 github.com/mattermost/mattermost-server/v5/api4
 github.com/mattermost/mattermost-server/v5/app
@@ -993,3 +993,4 @@ willnorris.com/go/gifresize
 willnorris.com/go/imageproxy
 willnorris.com/go/imageproxy/third_party/http
 # github.com/dyatlov/go-opengraph => github.com/agnivade/go-opengraph v0.0.0-20201221052033-34e69ee2a627
+# github.com/mattermost/mattermost-server/v5 => github.com/haalcala/mattermost-server-change-repo/v5 v5.33.0
