@@ -1,4 +1,4 @@
-module github.com/haalcala/mattermost-server-change-repo
+module github.com/haalcala/mattermost-server-change-repo/v5
 
 go 1.15
 
